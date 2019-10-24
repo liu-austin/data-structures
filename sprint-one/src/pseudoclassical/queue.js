@@ -12,7 +12,7 @@ Queue.prototype.enqueue = function(item) {
 };
 
 Queue.prototype.dequeue = function() {
-  var keys = Object.keys(this.obj).sort((a,b) => Number(a) - Number(b));
+  var keys = Object.keys(this.obj).sort((a, b) => Number(a) - Number(b));
   var returnVar = this.obj[keys[0]];
   delete this.obj[keys[0]];
   return returnVar;

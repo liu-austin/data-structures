@@ -16,7 +16,7 @@ var queueMethods = {
 
   dequeue: function() {
 
-    var keys = Object.keys(this.obj).sort((a,b) => Number(a) - Number(b));
+    var keys = Object.keys(this.obj).sort((a, b) => Number(a) - Number(b));
     var returnValue = this.obj[keys[0]];
     delete this.obj[keys[0]];
     return returnValue;

@@ -15,7 +15,7 @@ var Queue = function() {
   };
 
   someInstance.dequeue = function() {
-    var keys = Object.keys(storage).sort((a,b) => Number(a) - Number(b));
+    var keys = Object.keys(storage).sort((a, b) => Number(a) - Number(b));
     var dequeued = storage[keys[0]];
     delete storage[keys[0]];
     return dequeued;
